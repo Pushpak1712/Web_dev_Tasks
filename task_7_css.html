@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #7d184b;
+        
+      }
+
+      .flex-container {
+        background-color: rgb(70, 11, 37);
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 500px;
+        width: 400px;
+      }
+      .table{
+        width: 500px;
+        padding: 29px;
+        border-spacing: 20px;
+        color: white;
+      }
+    
+
+      .form-label {
+        /* font-weight: bold; */
+        color: #fff;
+      }
+
+      .register{
+        text-align: center;
+        padding-right: 140px;
+        font-weight: bold; 
+      }
+      .button{
+        width: 130%;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .label{
+        color: white;
+        
+      }
+      .radio{
+        text-align: right;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      
+      <table class="table">
+        <form action="#" method="post">
+          <tr>
+            <div>
+              <td class="form-label"><label for="name">Name: </label></td>
+              <td>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="your name"
+                  required
+                />
+              </td>
+              
+            </div>
+          </tr>
+          
+  
+          <tr>
+            <div>
+              <td class="form-label"><label for="username">Email:</label></td>
+              <td>
+                <input type="text" id="Email" name="Email" placeholder="your email" required />
+              </td>
+              
+            </div>
+            
+          </tr>
+          
+  
+          <tr>
+            <div>
+              <td class="form-label"><label for="password">Password:</label></td>
+              <td>
+                <input type="password" id="password" name="password" required />
+              </td>
+             
+            </div>
+          </tr>
+          
+  
+          <tr>
+            <div>
+              <td class="form-label">
+                <label for="Phone_Number">Phone Number:</label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  id="Phone_Number"
+                  name="Phone_Number"
+                  required
+                />
+              </td>
+            </div>
+          </tr>
+          
+          
+  <tr><div><td class="form-label">
+          <label for="gender">Gender:</label></td>
+       <td> Male:<input class="radio" type="radio" id="male" name="gender" value="male" />
+        <!-- <label class="label" for="male">Male</label> -->
+        Female:<input class="radio" type="radio" id="female" name="gender" value="female" />
+        <!-- <label class="label" for="female">Female</label> -->
+        Other:<input class="radio" type="radio" id="other" name="gender" value="other" />
+        <!-- <label class="label" for="other">Other</label></td></div> -->
+  </tr>
+          <tr></tr>
+            <div>
+              <td class="form-label"><label for="dropdown">Language:</label></td>
+              <td>
+                <select id="dropdown" name="dropdown">
+                  <option value="option1">Select language</option>
+                  <option value="option2">Telugu</option>
+                  <option value="option3">Tamil</option>
+                </select>
+              </td>
+            </div>
+          </tr>
+          
+
+          <tr>
+            <div>
+              <td class="form-label"><label for="zipcode">Zipcode:</label></td>
+              <td>
+                <input type="text" id="zipcode" name="zipcode" required />
+              </td>
+             
+            </div>
+          </tr>
+          
+          <tr>
+            <div>
+              <td class="form-label"><label for="Address">Address:</label></td>
+              <td>
+                <textarea> </textarea>
+              </td>
+             
+            </div>
+          </tr>
+
+         <tr>
+          <td class="form-label" colspan="2"><div class="register">
+            <button class="button" type="submit" size="600px"><b>Register</b></button>
+          </div></td>
+          </tr>
+        </form>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: opx;
+        box-sizing: border-box;
+      }
+      .container {
+        position: fixed;
+        z-index: 999;
+        top: 10px;
+        left: 0;
+        height: auto;
+        width: auto;
+      }
+      .google,
+      .Youtube,
+      .Twitter,
+      .Ethnus {
+        height: 40px;
+        width: 140px;
+        position: absolute;
+        left: -80px;
+        top: 0%;
+        /* background-color: green; */
+        border-radius: 7px;
+        text-align: left;
+        line-height: 40px;
+        transition-property: 1;
+      }
+      .google {
+        background-color: green;
+        top: 50px;
+      }
+      .Youtube {
+        background-color: rgb(92, 121, 235);
+        top: 100px;
+      }
+      .Twitter {
+        background-color: rgb(239, 77, 77);
+        top: 150px;
+      }
+      .Ethnus {
+        background-color: rgb(78, 76, 76);
+        top: 200px;
+      }
+      a {
+        font-size: 15px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: white;
+      }
+      .container > :hover {
+        left: 0px;
+      }
+      .para {
+        text-align: center;
+      }
+      .heading {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">Hoverable Sidenav Buttons</h1>
+    <p class="para">
+      Hover over the buttons in the left side navigation to open them
+    </p>
+    <div class="container">
+      <div class="google">
+        <a href="https://www.google.co.in/" target="_blank">Google</a>
+      </div>
+      <div class="Youtube">
+        <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+      </div>
+      <div class="Twitter">
+        <a href="https://twitter.com/login?lang=en" target="_blank">Twitter</a>
+      </div>
+      <div class="Ethnus">
+        <a href="https://ethnus.com/" target="_blank">Ethnus</a>
+      </div>
+    </div>
+  </body>
+</html>
